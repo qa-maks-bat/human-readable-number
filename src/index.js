@@ -26,10 +26,10 @@ module.exports = function toReadable (number) {
         if (digitsArray[1] === 0 && digitsArray[2] === 0) {
             return result = `${arr1[digitsArray[0]]} hundred`;
 
-        } else if (digitsArray[1] === 0 && digitsArray[2] <= 9) {
+        } else if (digitsArray[1] === 0) {
             return result = `${arr1[digitsArray[0]]} hundred ${arr1[digitsArray[2]]}`;
         
-        } else if (digitsArray[1] === 1 && digitsArray[2] <= 9) {
+        } else if (digitsArray[1] === 1) {
             return result = `${arr1[digitsArray[0]]} hundred ${arr1[(digitsArray[2] + 10)]}`;
 
         } else if (digitsArray[1] >= 2 && digitsArray[2] === 0) {
